@@ -2,7 +2,7 @@ export default function Footer({ title = "MacSites Contrast Checker" }) {
     return (
         <footer id="site-footer" className="grey pt-4 pb-2">
             <div className="container">
-                <div class="row row-eq-height">
+                <div className="row row-eq-height">
                     <div className="col-xl-3 col-lg-12 text-center ">
                         <div className="col-12">
                             <h3>{title}</h3>
