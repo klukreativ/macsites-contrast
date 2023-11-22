@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-import { BlockPicker } from 'react-color';
-import chroma from 'chroma-js';
-import ThumbnailContent from './thumbnail-content';
-
 import ColourPickerCard from './colourpicker-card';
 
 export default function ColorPicker() {
