@@ -1,3 +1,17 @@
+:root {
+    --default-primary: #7a003c;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url(../utils/fonts/RobotoCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../utils/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
 header#mcmaster-header .mcmaster-header__header-title {
     font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
     font-size: 3.8em;
@@ -89,6 +103,24 @@ a {
     -webkit-text-decoration-skip: objects;
 }
 
+.card-lg .card-title:after,
+.card .card-title:after {
+    display: block;
+    content: '';
+    width: 36px;
+    height: 4px;
+    background-color: #7a003c;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+#site-footer p,
+#site-footer address {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 12px;
+}
+
 /* CUSTOM (non-MACSITE) STYLING */
 
 #mcmaster-header__title {
@@ -107,12 +139,51 @@ a {
     display: flex;
 }
 
-.nav-item {    
+.nav-item {
     font-size: 19px;
-    color: #fff !important;    
+    color: #fff !important;
     font-style: normal;
 }
 
 #site-navbar {
     background-color: #7a003c;
+}
+
+.mcmaster-header__department>a {
+    font-family: "Roboto Condensed", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+    font-size: 22.5px;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--default-primary);
+    letter-spacing: 0.5px;
+}
+
+.tier1, .tier2 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: normal;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.tier1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+
+.tier2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.footer-text {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+}
+
+.footer-text a {
+    color: inherit;
 }
