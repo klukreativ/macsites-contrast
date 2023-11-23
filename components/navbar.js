@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="container">
                 <div id="siteMenu" className="collapse navbar-collapse">
                     <ul id="navbar-nav" className="navbar-nav mr-auto">
-                        {links.map((link) => <Link title={link.title} />)}
+                        {links.map((link) => <Link key={link.title} title={link.title} />)}
                     </ul>
                 </div>
             </div>
