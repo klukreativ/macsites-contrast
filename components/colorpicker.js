@@ -4,6 +4,8 @@ import ColourPickerCard from './colourpicker-card';
 export default function ColorPicker() {
     const [primaryColour, setPrimaryColour] = useState("#7a003c");
     const [secondaryColour, setSecondaryColour] = useState("#fdbf57");
+    const primaryFont = "#FFFFFF";
+    const secondaryFont = "#000000";
 
     const handleChangePrimary = (colour) => setPrimaryColour(colour.hex);
     const handleChangeSecondary = (colour) => setSecondaryColour(colour.hex);
@@ -16,17 +18,16 @@ export default function ColorPicker() {
                         title={"Primary"}
                         colour={primaryColour}
                         changeColour={handleChangePrimary}
-                        textColour={"#FFFFFF"}
+                        textColour={primaryFont}
                     />
                     <ColourPickerCard
                         title={"Secondary"}
                         colour={secondaryColour}
                         changeColour={handleChangeSecondary}
-                        textColour={"#000000"}
+                        textColour={secondaryFont}
                     />                    
                 </div>
             </div>
         </section>
-
     )
 }
