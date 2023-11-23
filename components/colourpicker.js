@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
-import { ColourContext } from '../context/ColourContext';
+import { useColourContext } from '../context/ColourContext';
 import ColourPickerCard from './colourpicker-card';
 
 export default function ColourPicker() {
     const primaryFont = "#FFFFFF";
     const secondaryFont = "#000000";
-    const { primaryColour, updatePrimaryColour, secondaryColour, updateSecondaryColour } = useContext(ColourContext);
+    const { primaryColour, updatePrimaryColour, secondaryColour, updateSecondaryColour } = useColourContext();
 
     return (
         <section className="thumbnail-cards white my-5">
