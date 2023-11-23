@@ -5,16 +5,16 @@ import Navbar from '../components/navbar.js';
 import Body from '../components/body.js';
 import Footer from '../components/footer.js';
 
-let title;
-let subtitle;
-
 export default function Home() {
+    const title = "MacSites Contrast Checker";
+    const subtitle = "By Media Production Services";
+
     return (
         <>
             <Header title={title} subtitle={subtitle} />
             <Navbar />
             <Body />
-            <Footer title={title}/>
+            <Footer title={title} subtitle={subtitle} />
         </>
     )
 }
