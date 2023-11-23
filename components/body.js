@@ -1,9 +1,9 @@
-import ColorPicker from './colorpicker.js';
+import ColourPicker from './colourpicker.js';
 
 export default function Body() {
     return (
         <>
-            <ColorPicker />
+            <ColourPicker />
         </>
     )
 }
