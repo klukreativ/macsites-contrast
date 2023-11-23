@@ -1,6 +1,10 @@
+import { useColourContext } from '../context/ColourContext';
+
 export default function Footer({ title, subtitle }) {
+    const { primaryColour } = useColourContext();
+
     return (
-        <footer id="site-footer" className="grey pt-4 pb-2" style={{backgroundColor: "#7a003c"}}>
+        <footer id="site-footer" className="grey pt-4 pb-2" style={{ backgroundColor: primaryColour }}>
             <div className="container">
                 <div className="row row-eq-height">
                     <div className="col-xl-3 col-lg-12 text-center text-xl-end">
