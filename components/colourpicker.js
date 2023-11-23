@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { ColourContext } from '../context/ColourContext';
 import ColourPickerCard from './colourpicker-card';
 
-export default function ColorPicker() {
-    const [primaryColour, setPrimaryColour] = useState("#7a003c");
-    const [secondaryColour, setSecondaryColour] = useState("#fdbf57");
+export default function ColourPicker() {
     const primaryFont = "#FFFFFF";
     const secondaryFont = "#000000";
-
-    const handleChangePrimary = (colour) => setPrimaryColour(colour.hex);
-    const handleChangeSecondary = (colour) => setSecondaryColour(colour.hex);
+    const { primaryColour, updatePrimaryColour, secondaryColour, updateSecondaryColour } = useContext(ColourContext);
 
     return (
         <section className="thumbnail-cards white my-5">
@@ -17,15 +14,15 @@ export default function ColorPicker() {
                     <ColourPickerCard
                         title={"Primary"}
                         colour={primaryColour}
-                        changeColour={handleChangePrimary}
+                        changeColour={updatePrimaryColour}
                         textColour={primaryFont}
                     />
                     <ColourPickerCard
                         title={"Secondary"}
                         colour={secondaryColour}
-                        changeColour={handleChangeSecondary}
+                        changeColour={updateSecondaryColour}
                         textColour={secondaryFont}
-                    />                    
+                    />
                 </div>
             </div>
         </section>
