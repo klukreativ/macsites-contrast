@@ -1,5 +1,5 @@
 export default function Banner() {
     return (
-        <div>I'm a Banner</div>
+        <div>I&aposm a Banner</div>
     )
 }
