@@ -8,7 +8,7 @@ export function useColourContext() {
 
 export function ColourProvider({ children }) {
     const [primaryColour, setPrimaryColour] = useState('#7a003c');
-    const [secondaryColour, setSecondaryColour] = useState('fdbf57');
+    const [secondaryColour, setSecondaryColour] = useState('#fdbf57');
 
     const updatePrimaryColour = (newColour) => setPrimaryColour(newColour.hex);
     const updateSecondaryColour = (newColour) => setSecondaryColour(newColour.hex);
