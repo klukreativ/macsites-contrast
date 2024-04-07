@@ -10,8 +10,8 @@ export default function Footer({ title, subtitle }) {
                 <div className="row row-eq-height">
                     <div className="col-xl-3 col-lg-12 text-center text-xl-end">
                         <h2 id="site-name" className="mr-xl-3 d-flex flex-column">
-                            <a href="/" className="tier2 order-2">{subtitle}</a>
-                            <a href="/" className="tier1 order-1">{title}</a>
+                            <Link href="/" className="tier2 order-2">{subtitle}</Link>
+                            <Link href="/" className="tier1 order-1">{title}</Link>
                         </h2>
                     </div>
                     <div className="col-xl-9 col-lg-12 text-center text-xl-right">
